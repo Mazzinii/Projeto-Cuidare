@@ -71,10 +71,6 @@ h1 {
   display: none;
 }
 
-.nav-contemfilhos.active .filho,
-.nav-contemfilhos1.active .filho1 {
-  display: block;
-}
 /* --------BUTTON HAMBURGUER------  */
 
 .hamburguer {
@@ -154,6 +150,10 @@ h1 {
 }
 
 /* --------FOOTER------  */
+footer {
+  background-color: rgba(0, 0, 0, 0.842);
+  padding: 2rem;
+}
 .whats {
   position: fixed;
   right: 0;
@@ -167,6 +167,8 @@ h1 {
     display: block;
     z-index: 1;
   }
+
+  /* --------NAVBAR------  */
   .navbar {
     position: fixed;
     top: 0;
@@ -202,6 +204,17 @@ h1 {
     transform: rotate(-135deg);
     top: -7px;
   }
+  .nav-contemfilhos.active .filho,
+  .nav-contemfilhos1.active .filho1 {
+    display: block;
+    padding: 0.8rem 0;
+  }
+  .pai,
+  .pai1 {
+    padding-bottom: 1rem;
+  }
+
+  /* --------SECTIONS------  */
   .quem-somos,
   .projetos,
   .nossa-historia,
@@ -211,19 +224,20 @@ h1 {
   .missao P {
     margin-top: 0;
   }
+  .rodape {
+    width: 600px;
+    & p {
+      text-align: center;
+      color: #ffffffd8;
+    }
+  }
+
+  /* --------FONTS------  */
   h1 {
     font-size: 2rem;
   }
   p {
     font-size: 1.6rem;
     text-align: justify;
-  }
-  .pai,
-  .pai1 {
-    padding-bottom: 1rem;
-  }
-  .filho,
-  .filho1 {
-    padding: 0.8rem 0;
   }
 }
