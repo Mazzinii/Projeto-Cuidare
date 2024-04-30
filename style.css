@@ -45,8 +45,8 @@ p {
     gap: 1rem;
   }
 
-  & .nav-contemfilhos li:first-child::after,
-  .nav-contemfilhos1 li:first-child::after {
+  & .nav-contemfilhos .pai::after,
+  .nav-contemfilhos1 .pai1::after {
     content: "▾";
   }
 
@@ -69,9 +69,30 @@ p {
   }
 }
 /* --------SUBMENUS------  */
-.filho,
-.filho1 {
-  display: none;
+
+.nav-contemfilhos,
+.nav-contemfilhos1 {
+  position: relative;
+}
+.submenu,
+.submenu1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  z-index: 1;
+  position: absolute;
+  background-color: #ffffff;
+  height: auto;
+  width: 130px;
+  top: 30px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: -1px 22px 22px 0px rgba(0, 0, 0, 0.384);
+
+  & li {
+    text-align: left;
+    padding-left: 1rem;
+  }
 }
 
 /* --------BUTTON HAMBURGUER------  */
@@ -169,6 +190,44 @@ footer {
 }
 
 /* --------MEDIAQUERY------  */
+
+/* --------FUNÇAO HOVER------  */
+@media (max-width: 2000px) {
+  .navbar {
+    & li:hover a:first-child {
+      transition: 0.5s;
+      color: #106278;
+    }
+  }
+  .nav-contemfilhos:hover,
+  .nav-contemfilhos1:hover {
+    & .submenu,
+    .submenu1 {
+      display: absolute;
+    }
+  }
+  .submenu:hover,
+  .submenu1:hover {
+    & li a {
+      background-color: #106278;
+      color: #fff;
+    }
+  }
+  .button-nav:hover {
+    scale: 1.05;
+    transition: 0.1s;
+  }
+}
+/* --------------  */
+@media (max-width: 850px) {
+  .quem-somos,
+  .projetos,
+  .nossa-historia,
+  .missao,
+  .rodape {
+    width: 700px;
+  }
+}
 @media (max-width: 750px) {
   .hamburguer {
     display: block;
