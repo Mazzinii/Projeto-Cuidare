@@ -76,22 +76,21 @@ p {
 }
 .submenu,
 .submenu1 {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.2rem;
   z-index: 1;
   position: absolute;
   background-color: #ffffff;
   height: auto;
-  width: 130px;
-  top: 30px;
-  padding: 1rem;
+  width: 95px;
+  top: 35px;
   border-radius: 0.5rem;
   box-shadow: -1px 22px 22px 0px rgba(0, 0, 0, 0.384);
 
   & li {
     text-align: left;
-    padding-left: 1rem;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -192,7 +191,13 @@ footer {
 /* --------MEDIAQUERY------  */
 
 /* --------FUNÇAO HOVER------  */
-@media (max-width: 2000px) {
+@media (min-width: 751px) {
+  .nav-contemfilhos:hover .submenu {
+    display: flex;
+  }
+  .nav-contemfilhos1:hover .submenu1 {
+    display: flex;
+  }
   .navbar {
     & li:hover a:first-child {
       transition: 0.5s;
@@ -206,10 +211,17 @@ footer {
       display: absolute;
     }
   }
-  .submenu:hover,
-  .submenu1:hover {
-    & li a {
-      background-color: #106278;
+  .submenu li:hover {
+    transition: 0.5s;
+    background-color: #106278;
+    & a:first-child {
+      color: #fff;
+    }
+  }
+  .submenu1 li:hover {
+    transition: 0.5s;
+    background-color: #106278;
+    & a:first-child {
       color: #fff;
     }
   }
@@ -270,8 +282,8 @@ footer {
     transform: rotate(-135deg);
     top: -7px;
   }
-  .nav-contemfilhos.active .filho,
-  .nav-contemfilhos1.active .filho1 {
+  .nav-contemfilhos.active .submenu,
+  .nav-contemfilhos1.active .submenu1 {
     display: block;
     padding: 0.8rem 0;
   }
