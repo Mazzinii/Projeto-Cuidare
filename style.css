@@ -70,28 +70,13 @@ p {
 }
 /* --------SUBMENUS------  */
 
-.nav-contemfilhos,
-.nav-contemfilhos1 {
+.pai,
+.pai1 {
   position: relative;
 }
 .submenu,
 .submenu1 {
   display: none;
-  flex-direction: column;
-  gap: 0.2rem;
-  z-index: 1;
-  position: absolute;
-  background-color: #ffffff;
-  height: auto;
-  width: 95px;
-  top: 35px;
-  border-radius: 0.5rem;
-  box-shadow: -1px 22px 22px 0px rgba(0, 0, 0, 0.384);
-
-  & li {
-    text-align: left;
-    padding: 0.5rem 1rem;
-  }
 }
 
 /* --------BUTTON HAMBURGUER------  */
@@ -192,6 +177,24 @@ footer {
 
 /* --------FUNÇAO HOVER------  */
 @media (min-width: 751px) {
+  .submenu,
+  .submenu1 {
+    flex-direction: column;
+    gap: 0.2rem;
+    z-index: 1;
+    position: absolute;
+    background-color: #ffffff;
+    height: auto;
+    width: 95px;
+    top: 60px;
+    border-radius: 0.5rem;
+    box-shadow: -1px 22px 22px 0px rgba(0, 0, 0, 0.384);
+
+    & li {
+      text-align: left;
+      padding: 0.5rem 1rem;
+    }
+  }
   .nav-contemfilhos:hover .submenu {
     display: flex;
   }
@@ -228,6 +231,11 @@ footer {
   .button-nav:hover {
     scale: 1.05;
     transition: 0.1s;
+  }
+  .whats:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.2s;
   }
 }
 /* --------------  */
@@ -313,5 +321,11 @@ footer {
   p {
     font-size: 1.6rem;
     text-align: justify;
+  }
+}
+@media (min-width: 1050px) {
+  .submenu,
+  .submenu1 {
+    top: 45px;
   }
 }
