@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Projeto Cuidare</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="/index.html"
+          ><img src="imagens/logo 2.png" alt="" height="60"
+        /></a>
+        <div><button class="hamburguer" title="text"></button></div>
+        <div class="navbar">
+          <ul class="nav-contemfilhos">
+            <li class="pai"><a href="#">SOBRE O INSTITUTO</a></li>
+            <ul class="submenu">
+              <li class="filho"><a href="#">SUBMENU</a></li>
+              <li class="filho"><a href="#">SUBMENU</a></li>
+              <li class="filho"><a href="#">SUBMENU</a></li>
+            </ul>
+          </ul>
+          <ul class="nav-contemfilhos1">
+            <li class="pai1"><a href="#">NOSSOS PROJETOS</a></li>
+            <ul class="submenu1">
+              <li class="filho1"><a href="#">SUBMENU</a></li>
+              <li class="filho1"><a href="#">SUBMENU</a></li>
+              <li class="filho1"><a href="#">SUBMENU</a></li>
+            </ul>
+          </ul>
+          <ul class="nav">
+            <li><a href="#">EQUIPE</a></li>
+          </ul>
+          <div class="button-nav">
+            <a href="#"><span>INSCRIÇÃO CURSO</span></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="curso section">
+        <h1>INSCRIÇÃO DO CURSO</h1>
+        <form
+          action="https://formsubmit.co/ajax/lmazzinicarrara@gmail.com"
+          method="POST"
+        >
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" required />
+
+          <label for="menssagem">Como nos conheceu?</label>
+          <textarea name="message" id="messagem" required></textarea>
+
+          <label for="telefone">Celular com DDD:</label>
+          <input type="tel" name="telefone" required />
+
+          <button class="button-curso" type="submit">Enviar</button>
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nova inscrição do Curso!"
+          />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

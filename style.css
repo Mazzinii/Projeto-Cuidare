@@ -42,7 +42,7 @@ p {
     display: flex;
     align-items: center;
     text-align: center;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   & .nav-contemfilhos .pai::after,
@@ -58,10 +58,10 @@ p {
   & .button-nav {
     display: flex;
     padding: 0.8rem;
+    margin-right: 1rem;
     border-radius: 0.6rem;
     background-color: #196a7f;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
     & a {
       color: #fff;
       text-decoration: none;
@@ -113,7 +113,7 @@ p {
   height: 15rem;
 }
 
-/* --------QUEM SOMOS------  */
+/* --------SECTION------  */
 .section {
   width: 800px;
   margin: 0 auto;
@@ -172,7 +172,47 @@ footer {
   bottom: 0;
   padding: 0.5rem;
 }
+/* --------CURSO------  */
+.curso {
+  margin-top: 15rem;
+  & h1 {
+    text-align: center;
+  }
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 500px;
+  margin: 0 auto;
+  & label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  & .button-curso {
+    padding: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    background-color: #196a7f;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+    text-decoration: none;
+
+    & .button-curso:disabled {
+      cursor: not-allowed;
+      background: #555b59;
+    }
+  }
+  & input,
+  select,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.6rem;
+  }
+}
 /* --------MEDIAQUERY------  */
 
 /* --------FUNÇAO HOVER------  */
@@ -186,7 +226,7 @@ footer {
     background-color: #ffffff;
     height: auto;
     width: 95px;
-    top: 60px;
+    top: 45px;
     border-radius: 0.5rem;
     box-shadow: -1px 22px 22px 0px rgba(0, 0, 0, 0.384);
 
@@ -228,14 +268,20 @@ footer {
       color: #fff;
     }
   }
-  .button-nav:hover {
-    scale: 1.05;
-    transition: 0.1s;
-  }
   .whats:hover {
     cursor: pointer;
     scale: 1.1;
     transition: 0.2s;
+  }
+
+  .button-nav:hover {
+    scale: 1.05;
+    transition: 0.1s;
+  }
+  .button-curso:hover {
+    scale: 1.02;
+    transition: ease-in-out;
+    cursor: pointer;
   }
 }
 /* --------------  */
