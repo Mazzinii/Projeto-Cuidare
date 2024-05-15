@@ -9,12 +9,6 @@ const filhos1 = document.querySelector(".nav-contemfilhos1"); //pegando o elemen
 /* --------FORMULARIO------  */
 const button = document.querySelector(".button-curso");
 
-button.addEventListener("click", function () {
-  button.innerText = "Enviando...";
-  button.style.backgroundColor = "grey";
-  button.preventDefault();
-});
-
 function thanks() {
   window.open("https://institutocuidare.netlify.app/thanks", "_top");
 }
@@ -23,6 +17,7 @@ function thanks() {
 hamburguer.addEventListener("click", () => nav.classList.toggle("active")); //adicionando evento de clique que quando ativo mostra o menu nav
 
 /* --------SUBMENUS------  */
+
 pai.addEventListener("click", () => filhos.classList.toggle("active")); //adicionando evento de clique que quando ativo mostrar o primeiro submenu
 
 pai1.addEventListener("click", () => filhos1.classList.toggle("active")); //adicionando evento de clique que quando ativo mostrar o segundo submenu
