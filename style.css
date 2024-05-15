@@ -139,6 +139,16 @@ p {
     text-align: center;
   }
 }
+/* --------NOSSA HISTRIA------  */
+
+.nossa-historia {
+  & h1 {
+    padding-top: 5rem;
+  }
+  & p {
+    padding-bottom: 5rem;
+  }
+}
 
 /* --------IMAGEM3/MISSAO, VISAO E VALORES------  */
 .imagem3 {
