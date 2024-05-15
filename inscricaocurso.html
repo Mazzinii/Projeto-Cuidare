@@ -40,27 +40,33 @@
           method="POST"
         >
           <label for="nome">Nome:</label>
-          <input type="text" name="nome" required />
+          <input class="inputnome" type="text" name="nome" required />
 
           <label for="email">E-mail:</label>
-          <input type="email" name="email" required />
+          <input class="inputemail" type="email" name="email" required />
 
           <label for="menssagem">Como nos conheceu?</label>
-          <textarea name="message" id="messagem" required></textarea>
+          <textarea
+            class="inputmessage"
+            name="message"
+            id="messagem"
+            required
+          ></textarea>
 
           <label for="telefone">Celular com DDD:</label>
-          <input type="tel" name="telefone" required />
+          <input class="input" type="tel" name="telefone" required />
 
-          <button class="button-curso" type="submit">Enviar</button>
+          <button
+            onclick="setTimeout(thanks, 3000)"
+            class="button-curso"
+            type="submit"
+          >
+            Enviar
+          </button>
           <input
             type="hidden"
             name="_subject"
             value="Nova inscrição do Curso!"
-          />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://institutocuidare.netlify.app/thanks"
           />
         </form>
       </section>
