@@ -36,25 +36,25 @@
         </div>
 
         <form
-          action="https://formsubmit.co/ajax/lmazzinicarrara@gmail.com"
+          action="https://formsubmit.co/ajax/rhcuidareagape@gmail.com"
           method="POST"
         >
           <label for="nome">Nome:</label>
           <input class="inputnome" type="text" name="nome" required />
 
           <label for="email">E-mail:</label>
-          <input class="inputemail" type="email" name="email" required />
+          <input class="input" type="email" name="email" required />
 
           <label for="menssagem">Como nos conheceu?</label>
           <textarea
-            class="inputmessage"
+            class="input"
             name="message"
             id="messagem"
             required
           ></textarea>
 
           <label for="telefone">Celular com DDD:</label>
-          <input class="input" type="tel" name="telefone" required />
+          <input class="inputtelefone" type="tel" name="telefone" required />
 
           <button
             onclick="setTimeout(thanks, 3000)"
@@ -68,6 +68,8 @@
             name="_subject"
             value="Nova inscrição do Curso!"
           />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://google.com" />
         </form>
       </section>
     </main>

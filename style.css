@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #181717e0;
 }
 body {
@@ -65,6 +65,7 @@ p {
     & a {
       color: #fff;
       text-decoration: none;
+      font-size: 1.6rem;
     }
   }
 }
@@ -220,11 +221,7 @@ form {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
     color: #fff;
     text-decoration: none;
-
-    & .button-curso:disabled {
-      cursor: not-allowed;
-      background: #555b59;
-    }
+    font-size: 1.6rem;
   }
   & input,
   select,
