@@ -8,9 +8,12 @@ const pai1 = document.querySelector(".pai1"); //pegando o elemento pai
 const filhos1 = document.querySelector(".nav-contemfilhos1"); //pegando o elemento filho
 
 /* --------FORMULARIO------  */
+const url = document.querySelector(".formulario");
+
 function thanks() {
   window.open("https://institutocuidare.netlify.app/thanks", "_top");
 }
+
 /* --------MENU HAMBURGUER------  */
 hamburguer.addEventListener("click", () => nav.classList.toggle("active")); //adicionando evento de clique que quando ativo mostra o menu nav
 

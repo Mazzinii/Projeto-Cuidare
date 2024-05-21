@@ -247,6 +247,12 @@ form {
 
 /* --------FUNÇAO HOVER------  */
 @media (min-width: 751px) {
+  /* --------IMAGEM1------  */
+  .imagem1 {
+    margin-top: 8rem;
+    height: 20rem;
+  }
+
   .submenu,
   .submenu1 {
     flex-direction: column;
