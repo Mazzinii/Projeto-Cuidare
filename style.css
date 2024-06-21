@@ -3,6 +3,7 @@ html {
   font-size: 62.5%;
   font-family: Arial, Helvetica, sans-serif;
   color: #181717e0;
+  background-color: #081620;
 }
 body {
   font-size: 1.8rem;
@@ -11,10 +12,11 @@ body {
 }
 /* --------COR/TAMANHO------  */
 h1 {
-  color: #106278;
+  color: white;
 }
 p {
   text-align: justify;
+  color: white;
 }
 /* --------Navegação------  */
 .header {
@@ -22,9 +24,9 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #ffffff;
+  background-color: #081620;
   padding: 0.8rem 0.6rem 0.8rem 0.6rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgb(0, 0, 0) 0px 5px 10px;
 
   & .nav {
     display: flex;
@@ -61,11 +63,12 @@ p {
     margin-right: 1rem;
     border-radius: 0.6rem;
     background-color: #196a7f;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgb(0, 0, 0);
     & a {
-      color: #fff;
+      color: white;
       text-decoration: none;
       font-size: 1.6rem;
+      font-weight: 500;
     }
   }
 }
@@ -86,7 +89,7 @@ p {
   display: none;
   border: none;
   background: none;
-  border-top: 3px solid #106278;
+  border-top: 3px solid #196a7f;
   cursor: pointer;
   padding: 0;
 }
@@ -96,7 +99,7 @@ p {
   display: block;
   width: 30px;
   height: 3px;
-  background: #106278;
+  background: #196a7f;
   margin-top: 5px;
   position: relative;
   transition: 0.3s;
@@ -112,6 +115,7 @@ p {
   background-size: cover;
   background-position: center;
   height: 15rem;
+  padding: 3rem;
 }
 
 /* --------SECTION------  */
@@ -134,7 +138,7 @@ p {
   width: 700px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffffffc7;
+  background-color: #081620a8;
 
   & h1 {
     text-align: center;
@@ -165,7 +169,7 @@ p {
   padding: 1.5rem 1.5rem 1rem 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 0.8rem;
-  background-color: #ffffffc7;
+  background-color: #081620a8;
 
   & img {
     border-radius: 0.8rem;
@@ -200,6 +204,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 
 form {
@@ -208,6 +213,7 @@ form {
   gap: 0.5rem;
   width: 500px;
   margin: 0 auto;
+  color: white;
   & label {
     font-weight: bold;
     margin-bottom: 5px;
@@ -343,7 +349,7 @@ form {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(236, 236, 236, 0.993);
+    background: #081620;
     clip-path: circle(100px at 90% -20%);
     transition: 0.6s ease-out;
 
