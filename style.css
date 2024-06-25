@@ -12,7 +12,7 @@ body {
 }
 /* --------COR/TAMANHO------  */
 h1 {
-  color: white;
+  color: #08fa6d;
 }
 p {
   text-align: justify;
@@ -62,10 +62,10 @@ p {
     padding: 0.8rem;
     margin-right: 1rem;
     border-radius: 0.6rem;
-    background-color: #196a7f;
+    background-color: #08fa6dc0;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgb(0, 0, 0);
     & a {
-      color: white;
+      color: rgb(255, 255, 255);
       text-decoration: none;
       font-size: 1.6rem;
       font-weight: 500;
@@ -89,7 +89,7 @@ p {
   display: none;
   border: none;
   background: none;
-  border-top: 3px solid #196a7f;
+  border-top: 3px solid #08fa6d;
   cursor: pointer;
   padding: 0;
 }
@@ -99,7 +99,7 @@ p {
   display: block;
   width: 30px;
   height: 3px;
-  background: #196a7f;
+  background: #08fa6d;
   margin-top: 5px;
   position: relative;
   transition: 0.3s;
@@ -223,9 +223,9 @@ form {
     margin-top: 1rem;
     margin-bottom: 21rem;
     border-radius: 1.5rem;
-    background-color: #196a7f;
+    background-color: #08fa6dc0;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 1.6rem;
   }

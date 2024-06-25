@@ -10,6 +10,11 @@ const filhos1 = document.querySelector(".nav-contemfilhos1"); //pegando o elemen
 /* --------MENU HAMBURGUER------  */
 hamburguer.addEventListener("click", () => nav.classList.toggle("active")); //adicionando evento de clique que quando ativo mostra o menu nav
 
+/* --------BUTTON CURSO------  */
+function clicado() {
+  location.href = "https://techyou.netlify.app/thanks";
+}
+
 /* --------SUBMENUS------  */
 
 pai.addEventListener("click", () => filhos.classList.toggle("active")); //adicionando evento de clique que quando ativo mostrar o primeiro submenu
